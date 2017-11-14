@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CocosSharpFrameAnimation"
+             xmlns:cf="clr-namespace:CocosSharp;assembly=CocosSharp.Forms"
+             x:Class="CocosSharpFrameAnimation.MainPage">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <cf:CocosSharpView x:Name="CocosView" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" />
+        <Image x:Name="ImageButtonAA"         Grid.Row="1" Grid.Column="3" />
+        <Image x:Name="ImageButtonCat"        Grid.Row="1" Grid.Column="4" />
+        <Image x:Name="ImageButtonFastRewind" Grid.Row="2" Grid.Column="0" />
+        <Image x:Name="ImageButtonRewind"     Grid.Row="2" Grid.Column="1" />
+        <Image x:Name="ImageButtonStop"       Grid.Row="2" Grid.Column="2" />
+        <Image x:Name="ImageButtonPlay"       Grid.Row="2" Grid.Column="3" />
+        <Image x:Name="ImageButtonFastFoward" Grid.Row="2" Grid.Column="4" />
+
+    </Grid>
+
+</ContentPage>
